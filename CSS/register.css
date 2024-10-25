@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --cor1: rgb(202,28,42);
+    --cor2: rgb(151, 21, 32);
+}
+
+body {
+    margin: 0;
+}
+
+header img {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-top-right-radius: 30px;
+
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(202,28,42), rgb(247, 41, 58));
+    height: 86px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.39);
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--cor1);
+}
+
+form {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    line-height: 24px;
+    max-width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.24);
+}
+
+
+/*Mensagem de erro no campo*/
+.span-required {
+    font-size: 12px;
+    margin: -12px 0 5px 1px;
+    color: var(--cor1);
+    display: none;
+}
+
+.span-required::after {
+    content: "✖";
+}
+
+
+/*Mensagem de correto no campo*/
+.span-right {
+    font-size: 12px;
+    color: #42BB33;
+    margin: -12px 0 5px 3px;
+    display: none;
+}
+
+.lbl-tittle {
+    color: rgb(247, 41, 58);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type=text], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    margin-top: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.6s;
+    transition: 0.1s;
+    outline: none;
+}
+
+input[type=date] {
+    font-family: 'Open Sans', sans-serif;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    margin-top: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.6s;
+    transition: 0.1s;
+    outline: none;
+}
+
+input[type=number] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    margin-top: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.6s;
+    transition: 0.1s;
+    outline: none;
+}
+
+input[type=tel] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    margin-top: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.6s;
+    transition: 0.1s;
+    outline: none;
+}
+
+input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    margin-top: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.6s;
+    transition: 0.1s;
+    outline: none;
+}
+
+form p {
+    font-size: 14px;
+    color: var(--cor2);
+    text-align: center;
+}
+
+button {
+    width: 220px;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: var(--cor1);
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: 1px solid var(--cor1);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 23%;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 1px solid var(--cor1);
+    color: var(--cor1);
+    transition-duration: 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(214, 10, 27);
+    text-decoration: underline;
+}
+
+#span_cad {
+    font-size: 15px;
+    font-weight: bold;
+    color: #42BB33;
+    margin: 1px 0 5px 3px;
+    display: none;
+}
+
+
+/*Olhos dos campos de senha*/
+#icon-eye {
+    position: relative;
+    right: 50px;
+    top: 10px;
+    float: right;
+    background: url('../IMG/olho.png');
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+#icon-eye.hide {
+    background: url('../IMG/olho-cortado.png');
+    background-size: cover;
+}
+
+
+#icon-eye2 {
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    background: url('../IMG/olho.png');
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+#icon-eye2.hide {
+    background: url('../IMG/olho-cortado.png');
+    background-size: cover;
+}
